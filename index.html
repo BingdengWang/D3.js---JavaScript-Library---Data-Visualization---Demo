@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Library</title>
+</head>
+<body>
+    <div class="row">
+        <div class="canvas">
+
+            <!-- <svg width='1200' height='1200'>
+            </svg> -->
+        </div>
+        <div class="canvas" id="canvas2">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <svg width="1200" height="1200">
+        <rect x='500' y='100' fill='blue' width='200' height='100'></rect>
+        <circle cx='500' cy='500' r='50' fill='grey' stroke='pink' stroke-width='2'></circle>
+        <line x1='200' y1='300' x2='300' y2='400' stroke='yellow' stroke-width='20'></line>
+        <path d='M150 50 L75 200 L225 200 C225 200 150 150 150 50' fill='pink' stroke='black' stroke-width='2'/>
+        <circle cx='150' cy='150' r='5' fill='grey'></circle>
+        <line x1='225' y1='200' x2='150' y2='150' stroke='grey'></line>
+        <line x1='150' y1='50' x2='150' y2='150' stroke='grey'></line>
+        <line x1='150' y1='50' x2='225' y2='200' stroke='grey'></line>
+    </svg> -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+
+    <script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyB9KlsZ5wmxmwl1R74ag0oboSsJBG7Dbms",
+        authDomain: "d3-firebase-41a0b.firebaseapp.com",
+        databaseURL: "https://d3-firebase-41a0b.firebaseio.com",
+        projectId: "d3-firebase-41a0b",
+        storageBucket: "d3-firebase-41a0b.appspot.com",
+        messagingSenderId: "934586477245",
+        appId: "1:934586477245:web:522cc2b18a0ea29bf465d4",
+        measurementId: "G-PWW1FCQ1W2"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true })
+    </script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
+</body>
+</html>
